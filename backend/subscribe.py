@@ -12,6 +12,7 @@ def subscribe():
     email = data.get('email')
     instagram = data.get('instagram')
     #API_OCTOPUS = os.environ.get('API_OCTOPUS')
+    print(instagram)
     
     if not email:
         return jsonify({'error': 'Email and Instagram are required'}), 400
