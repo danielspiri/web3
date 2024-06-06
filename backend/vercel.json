@@ -2,14 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/subscribe.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "50mb"
-      }
+      "src": "subscribe.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/subscribe.py" }
+    { "src": "/api/(.*)", "dest": "/subscribe.py" }
   ]
 }
