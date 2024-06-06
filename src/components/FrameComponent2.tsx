@@ -53,7 +53,7 @@ const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
                 Material Desarrollado por el Equipo de Bewerslab para Solucionar
                 Problemas Específicos de Nuestros Clientes.
               </span>
-              <span className="block">{`Observa con tus Propios Ojos Cómo Desarrollamos un Sistema con y sin Código desde 0. `}</span>
+              <span className="block">{` `}</span>
             </span>
           </p>
         </div>
