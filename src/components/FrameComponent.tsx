@@ -25,7 +25,7 @@ const FrameComponent = forwardRef<HTMLFormElement, FrameComponentType>(({
     });
 
     try {
-      const response = await fetch(`http://localhost:5000/subscribe`, {  // URL de tu servidor Flask
+      const response = await fetch(`https://web3-2ajt.vercel.app/api/subscribe`, {  // URL de tu servidor Flask
         method: 'POST',
         headers: headers,
         body: data
