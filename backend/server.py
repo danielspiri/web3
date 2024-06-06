@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -10,6 +11,7 @@ def subscribe():
     data = request.json
     email = data.get('email')
     instagram = data.get('instagram')
+    API_OCTOPUS = os.getenv('API_OCTOPUS')
     
     if not email:
         return jsonify({'error': 'Email and Instagram are required'}), 400
@@ -19,7 +21,7 @@ def subscribe():
     }
 
     data = {
-    "api_key": "14b7bb29-58d0-4bd2-a66a-3bc874fd04fb",
+    "api_key": API_OCTOPUS,
     "email_address": email,
     "fields": {
         "FirstName": instagram
