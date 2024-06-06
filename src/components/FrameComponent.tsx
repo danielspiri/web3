@@ -45,7 +45,7 @@ const FrameComponent = forwardRef<HTMLFormElement, FrameComponentType>(({
       }
     } catch (error) {
       console.error(error); // Log del error para depuración
-      setMessage('Hubo un problema con la suscripción.');
+      setMessage(`Hubo un problema con la suscripción. {error.message}`);
       setMessageType('error');
     }
   };
