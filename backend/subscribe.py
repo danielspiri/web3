@@ -46,5 +46,11 @@ def subscribe():
         print(f'Error: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
 
+@app.route('/stanford')
+def stanford_page():
+    return """
+      <h1>Hello stanford!</h1>
+    """
+
 if __name__ == '__main__':
     app.run(debug=True)
