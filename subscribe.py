@@ -31,7 +31,7 @@ def subscribe():
         "Bewerslab Club"
     ],
     "status": "SUBSCRIBED"
-    }          
+    }
 
     try:
         response = requests.post('https://emailoctopus.com/api/1.6/lists/87a17540-d713-11ee-ac1d-139086474c47/contacts', headers=headers, json=data)
