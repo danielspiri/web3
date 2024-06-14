@@ -17,15 +17,15 @@ const ProvaBona: FunctionComponent = () => {
           <div className="self-stretch flex flex-col items-start justify-start gap-[37px] text-sm text-gris-ttulo mq725:gap-[18px]">
             <div className="video-container">
               <iframe
-                  className="responsive-video"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/CtgnFhciqaQ?si=cFNhMbuAbTqTsyCm&autoplay=1&controls=0&modestbranding=1&showinfo=0&rel=0"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  referrerPolicy="strict-origin-when-cross-origin"
-                ></iframe>
+                className="responsive-video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/CtgnFhciqaQ?si=cFNhMbuAbTqTsyCm&autoplay=1&controls=0&modestbranding=1&rel=0&fs=0"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen={false}
+                referrerPolicy="strict-origin-when-cross-origin"
+              ></iframe>
             </div>
             <p className="m-0 w-full relative inline-block max-w-[1000px] mq1000:max-w-full">
               {" "}
