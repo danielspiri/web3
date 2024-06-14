@@ -16,13 +16,7 @@ const ProvaBona: FunctionComponent = () => {
           </h1>
           <div className="self-stretch flex flex-col items-start justify-start gap-[37px] text-sm text-gris-ttulo mq725:gap-[18px]">
             <div className="video-container">
-              <video
-                className="responsive-video"
-                controls
-                src="/Video Intro-1.mp4"
-                loop
-                autoPlay
-              />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CtgnFhciqaQ?si=cFNhMbuAbTqTsyCm" title="Acceso Bewerslab Club" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <p className="m-0 w-full relative inline-block max-w-[1000px] mq1000:max-w-full">
               {" "}
