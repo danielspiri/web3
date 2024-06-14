@@ -20,7 +20,7 @@ const ProvaBona: FunctionComponent = () => {
                   className="responsive-video"
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/CtgnFhciqaQ?si=cFNhMbuAbTqTsyCm&autoplay=1&controls=0"
+                  src="https://www.youtube.com/embed/CtgnFhciqaQ?si=cFNhMbuAbTqTsyCm&autoplay=1&controls=0&modestbranding=1&showinfo=0&rel=0"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
