@@ -49,10 +49,12 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
               </div>
               <video
                 className="w-full h-full object-cover rounded-3xs"
-                controls
                 src="/18069093-uhd_3840_2160_24fps.mp4"
                 loop
                 autoPlay
+                muted
+                playsInline
+                style={{ pointerEvents: 'none' }}
               />
             </div>
           </div>
