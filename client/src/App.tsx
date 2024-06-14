@@ -1,10 +1,5 @@
 import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useNavigationType, useLocation } from "react-router-dom";
 import ProvaBona from "./pages/ProvaBona";
 
 function App() {
