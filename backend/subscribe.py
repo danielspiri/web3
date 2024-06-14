@@ -11,7 +11,7 @@ def subscribe():
     data = request.json
     email = data.get('email')
     instagram = data.get('instagram')
-    #API_OCTOPUS = os.environ.get('API_OCTOPUS')
+    API_OCTOPUS = os.environ.get('API_OCTOPUS')
     print(instagram)
     
     if not email:
@@ -22,7 +22,7 @@ def subscribe():
     }
 
     data = {
-    "api_key": "14b7bb29-58d0-4bd2-a66a-3bc874fd04fb",
+    "api_key": API_OCTOPUS,
     "email_address": email,
     "fields": {
         "FirstName": instagram
