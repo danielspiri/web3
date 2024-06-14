@@ -1,12 +1,9 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "subscribe.py",
-      "use": "@vercel/python"
-    }
+    {"src": "subscribe.py", "use": "@vercel/python"}
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/subscribe.py" }
+    { "src": "/(.*)", "dest": "subscribe.py" }
   ]
 }
