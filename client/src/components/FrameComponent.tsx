@@ -9,7 +9,6 @@ const FrameComponent = forwardRef<HTMLFormElement, FrameComponentType>(({
 }, ref) => {
   const [email, setEmail] = useState('');
   const [instagram, setInstagram] = useState('');
-  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [messageType, setMessageType] = useState<'error' | 'success' | ''>('');
 
@@ -22,8 +21,7 @@ const FrameComponent = forwardRef<HTMLFormElement, FrameComponentType>(({
 
     const data = JSON.stringify({
       email: email,
-      instagram: instagram,
-      phone: phone
+      instagram: instagram
     });
 
     try {
@@ -90,16 +88,6 @@ const FrameComponent = forwardRef<HTMLFormElement, FrameComponentType>(({
                       required
                     />
                   </div>
-                  <div className="self-stretch shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-lg bg-white flex flex-row items-center justify-start py-3.5 px-4 border-[1px] border-solid border-gainsboro">
-                    <input
-                      className="w-[350px] [border:none] [outline:none] font-medium font-h5-computer text-xl bg-[transparent] h-[30px] relative leading-[150%] text-gray-100 text-left inline-block p-0 mq450:text-base mq450:leading-[24px]"
-                      placeholder="Phone"
-                      type="text"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
-                      required
-                    />
-                  </div>
                   <button type="submit" className="shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-lg bg-black flex flex-row items-center justify-center py-[10.5px] px-3 whitespace-nowrap text-white">
                     <div className="relative leading-[150%] font-medium">
                       Acceder Al Material Confidencial
@@ -145,16 +133,6 @@ const FrameComponent = forwardRef<HTMLFormElement, FrameComponentType>(({
               }}
             >
               Email
-            </div>
-            <div
-              className="relative font-medium"
-              onClick={() => {
-                if (ref && typeof ref !== 'function' && ref.current) {
-                  ref.current.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              Phone
             </div>
           </div>
         </div>
