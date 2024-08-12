@@ -11,10 +11,11 @@ def subscribe():
     data = request.json
     email = data.get('email')
     instagram = data.get('instagram')
+    phone = data.get('phone')
     API = os.environ.get('API_OCTOPUS')
     
     if not email:
-        return jsonify({'error': 'Email and Instagram are required'}), 400
+        return jsonify({'error': 'Email, Instagram and Phonw are required'}), 400
 
     headers = {
         'Content-Type': 'application/json',
@@ -24,7 +25,8 @@ def subscribe():
     "api_key": API,
     "email_address": email,
     "fields": {
-        "FirstName": instagram
+        "FirstName": instagram,
+        "PhoneNumber": phone
     },
     "tags": [
         "Bewerslab Club"
